@@ -13,6 +13,7 @@
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
  <%--   font awesome --%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <link href="Css/Style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -58,7 +59,7 @@
             </asp:ContentPlaceHolder>
         </div>
         <footer>
-            <p>&copy All right Reversed . </p>
+            <p class="text-center">&copy All right Reversed . </p>
         </footer>
     </form>
   <%--  bootstrap js--%>
