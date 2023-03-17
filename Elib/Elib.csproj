@@ -2128,6 +2128,26 @@
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="image\books\b1.jpg" />
+    <Content Include="image\books\b2.jpg" />
+    <Content Include="image\books\b3.jpg" />
+    <Content Include="image\books\b4.jpg" />
+    <Content Include="image\books\b5.jpg" />
+    <Content Include="image\imgs\adminuser.png" />
+    <Content Include="image\imgs\book-online.png" />
+    <Content Include="image\imgs\books.png" />
+    <Content Include="image\imgs\books1.png" />
+    <Content Include="image\imgs\defaulters-list.png" />
+    <Content Include="image\imgs\digital-data.png" />
+    <Content Include="image\imgs\digital-inventory.png" />
+    <Content Include="image\imgs\generaluser.png" />
+    <Content Include="image\imgs\home-bg.jpg" />
+    <Content Include="image\imgs\in-homepage-banner.jpg" />
+    <Content Include="image\imgs\library.png" />
+    <Content Include="image\imgs\publisher.png" />
+    <Content Include="image\imgs\search-online.png" />
+    <Content Include="image\imgs\sign-up.png" />
+    <Content Include="image\imgs\writer.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
