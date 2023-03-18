@@ -7,3 +7,17 @@ footer{
 footer p{
     color:white;
 }
+
+.nav-item a{
+    font-size:1.2rem;
+    padding:10px;
+   
+}
+.nav-item a:hover {
+    
+    border-bottom: 1px solid coral;
+    border-top: 0.5px solid coral;
+   
+}
+
+
