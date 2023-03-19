@@ -41,7 +41,7 @@
           <a class="nav-link" href="User_Login.aspx">User Login</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="Admin_login.aspx">Member Login</a>
+          <a class="nav-link" href="Admin_login.aspx">Admin Login</a>
         </li>
 
      
