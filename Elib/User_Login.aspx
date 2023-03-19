@@ -50,9 +50,11 @@
                                     <asp:TextBox CssClass="form-control" placeholder="password" ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>
                                 </div>
                                  <br />
-                                 <div class="form-group d-grid gap-2">
+                                 <div class="form-group">
                                      <asp:Button ID="Button1" CssClass="btn btn-success btn-lg" runat="server" Text="Login" />
-                                     <input id="Button2" type="button" class="btn btn-info btn-lg" value="Sign Up" />
+
+                                     <%--<input id="Button2" type="button"  class="btn btn-info btn-lg" value="Sign Up" />--%>
+                                     <a href="User_SignUp.aspx" class="btn btn-primary btn-lg">Sign Up</a>
                                  </div>
                                  
                         </div>
