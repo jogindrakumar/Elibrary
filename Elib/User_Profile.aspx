@@ -176,7 +176,46 @@
             </div>
 
             <div class="col-md-6">
-
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row">
+                             <div class="col">
+                            <center>
+                               
+                                <img src="image/books1.png" id="userimg" alt="Alternate Text" />
+                               
+                            </center>
+                        </div>
+                        </div>
+                       
+                        <div class="row">
+                             <div class="col">
+                           <center>
+                               <h4>Your Issue Books</h4>
+                              
+                               <asp:Label ID="Label2" CssClass="badge text-bg-success" runat="server" Text="Your Book Info"></asp:Label>
+                           </center>
+                        </div>
+                        </div>
+                        <div class="row">
+                             <div class="col">
+                                 <hr />
+                        </div>
+                        </div>
+                     
+                        
+                          
+                         <div class="row">
+                             <div class="col">
+                                 <asp:GridView ID="GridView1" class="table table-striped table-bordered"
+                                     runat="server"></asp:GridView>  
+                        </div>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                </div>
             </div>
              
         </div>
