@@ -25,7 +25,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                        <img  class="page-img" src="image/writer.png" />
+                                        <img class="page-img" src="image/writer.png" />
                                        
                                     </center>
                             </div>
