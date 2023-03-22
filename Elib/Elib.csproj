@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_author_management.aspx" />
+    <Content Include="Admin_book_Issuing.aspx" />
     <Content Include="Admin_login.aspx" />
+    <Content Include="Admin_member_management.aspx" />
     <Content Include="Admin_publisher_management.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
@@ -2165,12 +2167,26 @@
     <Compile Include="Admin_author_management.aspx.designer.cs">
       <DependentUpon>Admin_author_management.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin_book_Issuing.aspx.cs">
+      <DependentUpon>Admin_book_Issuing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_book_Issuing.aspx.designer.cs">
+      <DependentUpon>Admin_book_Issuing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_login.aspx.cs">
       <DependentUpon>Admin_login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin_login.aspx.designer.cs">
       <DependentUpon>Admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_member_management.aspx.cs">
+      <DependentUpon>Admin_member_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_member_management.aspx.designer.cs">
+      <DependentUpon>Admin_member_management.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_publisher_management.aspx.cs">
       <DependentUpon>Admin_publisher_management.aspx</DependentUpon>

@@ -16,6 +16,16 @@
     <link href="Css/Style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .footer-link {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -57,6 +67,15 @@
             </asp:ContentPlaceHolder>
         </div>
         <footer>
+            <div class="container">
+                <div class="col-md-6 mx-auto">
+                    <a href="Admin_author_management.aspx" class="footer-link">Author Management</a>
+                    <a href="Admin_publisher_management.aspx" class="footer-link">Publisher Management</a>
+                    <a href="Admin_book_Issuing.aspx" class="footer-link">Book Issue</a>
+                    <a href="Admin_member_management.aspx" class="footer-link">Book Issue</a>
+                </div>
+            </div>
+            <br />
             <p class="text-center">&copy All right Reversed . </p>
         </footer>
     </form>
