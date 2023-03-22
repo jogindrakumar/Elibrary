@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_author_management.aspx" />
     <Content Include="Admin_login.aspx" />
+    <Content Include="Admin_publisher_management.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Css\Style.css" />
@@ -2156,12 +2158,26 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_author_management.aspx.cs">
+      <DependentUpon>Admin_author_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_author_management.aspx.designer.cs">
+      <DependentUpon>Admin_author_management.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin_login.aspx.cs">
       <DependentUpon>Admin_login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin_login.aspx.designer.cs">
       <DependentUpon>Admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_publisher_management.aspx.cs">
+      <DependentUpon>Admin_publisher_management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_publisher_management.aspx.designer.cs">
+      <DependentUpon>Admin_publisher_management.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
