@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="User_Profile.aspx.cs" Inherits="Elib.User_Profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <style>
-        #userimg {
+        .userimg {
     width: 100px;
 }
 
@@ -21,7 +21,7 @@
                              <div class="col">
                             <center>
                                
-                                <img src="image/generaluser.png" id="userimg" alt="Alternate Text" />
+                                <img src="image/generaluser.png" class="userimg" alt="Alternate Text" />
                                
                             </center>
                         </div>

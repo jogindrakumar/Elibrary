@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_author_management.aspx.cs" Inherits="Elib.Admin_author_management" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .page-img{
+            width:100px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <div class="container mt-3">
@@ -20,7 +25,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                        <img width="100px" src="image/writer.png" />
+                                        <img  class="page-img" src="image/writer.png" />
                                        
                                     </center>
                             </div>
