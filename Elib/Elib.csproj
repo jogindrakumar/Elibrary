@@ -72,6 +72,7 @@
     <Content Include="Admin_login.aspx" />
     <Content Include="Admin_member_management.aspx" />
     <Content Include="Admin_publisher_management.aspx" />
+    <Content Include="Book_Inventory.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Css\Style.css" />
@@ -2194,6 +2195,13 @@
     </Compile>
     <Compile Include="Admin_publisher_management.aspx.designer.cs">
       <DependentUpon>Admin_publisher_management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Inventory.aspx.cs">
+      <DependentUpon>Book_Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book_Inventory.aspx.designer.cs">
+      <DependentUpon>Book_Inventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>

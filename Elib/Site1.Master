@@ -68,11 +68,12 @@
         </div>
         <footer>
             <div class="container">
-                <div class="col-md-6 mx-auto">
+                <div class="col-md-12 mx-auto">
                     <a href="Admin_author_management.aspx" class="footer-link">Author Management</a>
                     <a href="Admin_publisher_management.aspx" class="footer-link">Publisher Management</a>
+                    <a href="Book_Inventory.aspx" class="footer-link">Book Inventory</a>
                     <a href="Admin_book_Issuing.aspx" class="footer-link">Book Issue</a>
-                    <a href="Admin_member_management.aspx" class="footer-link">Book Issue</a>
+                    <a href="Admin_member_management.aspx" class="footer-link">Member Management</a>
                 </div>
             </div>
             <br />
