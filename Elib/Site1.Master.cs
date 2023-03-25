@@ -47,5 +47,21 @@ namespace Elib
         {
             Response.Redirect("Admin_member_management.aspx");
         }
+
+        protected void LinkButton7_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("User_Login.aspx");
+        }
+
+        protected void LinkButton8_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin_login.aspx");
+
+        }
+
+        protected void LinkButton9_Click(object sender, EventArgs e)
+        {
+            //Response.Redirect("Admin_member_management.aspx");
+        }
     }
 }
