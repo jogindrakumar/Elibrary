@@ -43,13 +43,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-id-card text-success"></i> Full Name</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Full Name" ID="TextBox1" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Full Name" ID="full_name" runat="server"></asp:TextBox>
                                 </div> 
                             </div>
                              <div class="col-md-6">
                                  <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-calendar-days"></i>Date of Birth</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="TextBox2" TextMode="Date" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="dob" TextMode="Date" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -57,13 +57,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-address-book"></i> Contact Number</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Contact" ID="TextBox3" TextMode="Number" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Contact" ID="contact_no" TextMode="Number" runat="server"></asp:TextBox>
                                 </div> 
                             </div>
                              <div class="col-md-6">
                                  <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-envelope"></i> Email ID</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Email" ID="TextBox4" TextMode="Email" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Email" ID="email" TextMode="Email" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-location-dot"></i> State </label>
-                                    <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
+                                    <asp:DropDownList CssClass="form-control" ID="ddl_state" runat="server">
                                         <asp:ListItem Text="Select" Value="selct" />
                                          <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
                                 <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
@@ -110,13 +110,13 @@
                              <div class="col-md-4">
                                  <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-location-dot"></i> City</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="City" ID="TextBox6" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="City" ID="city" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                                <div class="col-md-4">
                                  <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-hashtag"></i> Pin Code</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="PinCode" ID="TextBox7" TextMode="Number" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="PinCode" ID="pincode" TextMode="Number" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@
                             <div class="com-md-12">
                                   <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-hashtag"></i> Full Address</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Address" TextMode="MultiLine" ID="TextBox8"  runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Address" TextMode="MultiLine" ID="full_address"  runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -135,13 +135,13 @@
                             <div class="col-md-6">
                                  <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-id-card text-success"></i> User ID</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="User ID" ID="TextBox5" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="User ID" ID="member_id" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                   <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-lock text-danger"></i> Password</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="TextBox9" TextMode="Password" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="password" TextMode="Password" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,9 @@
                                  <div class="form-group">
                                  
                                      <center>
-                                         <input id="Button2" type="button" class="btn btn-success" value="Sign Up" />
+                                         <asp:Button ID="Button1" class="btn btn-success" runat="server" Text="Sign Up" OnClick="Button1_Click" />
+                                      
+                                         
                                          <a href="#" class="btn btn-primary">Login</a>
                                      </center>
                                  </div>
