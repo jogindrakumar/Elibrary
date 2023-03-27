@@ -51,7 +51,7 @@
                                 </div>
                                  <br />
                                  <div class="form-group">
-                                     <asp:Button ID="Button1" CssClass="btn btn-success btn-lg" runat="server" Text="Login" />
+                                     <asp:Button ID="Button1" CssClass="btn btn-success btn-lg" runat="server" Text="Login" OnClick="Button1_Click" />
 
                                      <%--<input id="Button2" type="button"  class="btn btn-info btn-lg" value="Sign Up" />--%>
                                      <a href="User_SignUp.aspx" class="btn btn-primary btn-lg">Sign Up</a>
