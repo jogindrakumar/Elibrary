@@ -44,15 +44,15 @@
                              <div class="col">
                                 <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-id-card text-success"></i> Member ID</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Member ID" ID="TextBox1" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Member ID" ID="username" runat="server"></asp:TextBox>
                                 </div>
                                   <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-lock text-danger"></i> Password</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="password" TextMode="Password" runat="server"></asp:TextBox>
                                 </div>
                                  <br />
                                  <div class="form-group d-grid gap-2">
-                                     <asp:Button ID="Button1" CssClass="btn btn-success btn-lg" runat="server" Text="Login" />
+                                     <asp:Button ID="Button1" CssClass="btn btn-success btn-lg" runat="server" Text="Login" OnClick="Button1_Click" />
                                      <input id="Button2" type="button" class="btn btn-info btn-lg" value="Sign Up" />
                                  </div>
                                  

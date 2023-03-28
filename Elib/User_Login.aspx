@@ -43,11 +43,11 @@
                              <div class="col">
                                 <div class="form-group">
                                     <label class="form-label"><i class="fa-regular fa-id-card text-success"></i> Member ID</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="Member ID" ID="TextBox1" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="Member ID" ID="member_id" runat="server"></asp:TextBox>
                                 </div>
                                   <div class="form-group">
                                     <label class="form-label"><i class="fa-solid fa-lock text-danger"></i> Password</label>
-                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="TextBox2" TextMode="Password" runat="server"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" placeholder="password" ID="password" TextMode="Password" runat="server"></asp:TextBox>
                                 </div>
                                  <br />
                                  <div class="form-group">
