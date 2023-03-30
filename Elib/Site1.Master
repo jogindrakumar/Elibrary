@@ -49,18 +49,18 @@
         </li>
            <li class="nav-item">
          
-               <asp:LinkButton ID="LinkButton7" runat="server" class="nav-link" OnClick="LinkButton7_Click">User Login</asp:LinkButton>
+               <asp:LinkButton ID="userlogin" runat="server" class="nav-link" OnClick="LinkButton7_Click">User Login</asp:LinkButton>
         </li>
            <li class="nav-item">
-               <asp:LinkButton ID="LinkButton8" runat="server" class="nav-link" OnClick="LinkButton8_Click">Admin Login</asp:LinkButton>
+               <asp:LinkButton ID="signup" runat="server" class="nav-link" OnClick="LinkButton8_Click">Sign Up</asp:LinkButton>
         
         </li>
             <li class="nav-item">
-                <asp:LinkButton ID="LinkButton9" runat="server" class="nav-link" Visible="false" OnClick="LinkButton9_Click">Logout</asp:LinkButton>
+                <asp:LinkButton ID="logout" runat="server" class="nav-link" Visible="false" OnClick="LinkButton9_Click">Logout</asp:LinkButton>
        
         </li>
           <li class="nav-item">
-                <asp:LinkButton ID="LinkButton10" runat="server" class="nav-link" Visible="false" OnClick="LinkButton9_Click">Hello User</asp:LinkButton>
+                <asp:LinkButton ID="hellouser" runat="server" class="nav-link" Visible="false" OnClick="LinkButton9_Click">Hello User</asp:LinkButton>
        
         </li>
      
@@ -78,12 +78,12 @@
         <footer>
             <div class="container">
                 <div class="col-md-12 mx-auto">
-                    <asp:LinkButton ID="LinkButton1" class="footer-link" runat="server" OnClick="LinkButton1_Click">Admin Login</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton2" class="footer-link" runat="server" Visible="false" OnClick="LinkButton2_Click">Author Management</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton3" class="footer-link" runat="server" Visible="false" OnClick="LinkButton3_Click">Publisher Management</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton4" class="footer-link" runat="server" Visible="false" OnClick="LinkButton4_Click">Book Inventory</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton5" class="footer-link" runat="server" Visible="false" OnClick="LinkButton5_Click">Book Issue</asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton6" class="footer-link" runat="server" Visible="false" OnClick="LinkButton6_Click">Member Management</asp:LinkButton>
+                    <asp:LinkButton ID="adminlogin" class="footer-link" runat="server" OnClick="LinkButton1_Click">Admin Login</asp:LinkButton>
+                    <asp:LinkButton ID="authormg" class="footer-link" runat="server" Visible="false" OnClick="LinkButton2_Click">Author Management</asp:LinkButton>
+                    <asp:LinkButton ID="publishermg" class="footer-link" runat="server" Visible="false" OnClick="LinkButton3_Click">Publisher Management</asp:LinkButton>
+                    <asp:LinkButton ID="bookinvent" class="footer-link" runat="server" Visible="false" OnClick="LinkButton4_Click">Book Inventory</asp:LinkButton>
+                    <asp:LinkButton ID="bookissue" class="footer-link" runat="server" Visible="false" OnClick="LinkButton5_Click">Book Issue</asp:LinkButton>
+                    <asp:LinkButton ID="membermg" class="footer-link" runat="server" Visible="false" OnClick="LinkButton6_Click">Member Management</asp:LinkButton>
                     <%--<a href="Admin_author_management.aspx" class="footer-link">Author Management</a>
                     <a href="Admin_publisher_management.aspx" class="footer-link">Publisher Management</a>
                     <a href="Book_Inventory.aspx" class="footer-link">Book Inventory</a>
