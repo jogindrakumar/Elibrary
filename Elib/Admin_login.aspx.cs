@@ -35,8 +35,13 @@ namespace Elib
 
                     while (reader.Read())
                     {
-                        Response.Write("<script>alert('Hello " + reader.GetValue(2).ToString() + "')</script>");
+                        Response.Write("<script>alert('Welcome " + reader.GetValue(2).ToString() + "')</script>");
+                        Session["username"] = reader.GetValue(0).ToString();
+                        Session["fullname"] = reader.GetValue(2).ToString();
+                        Session["role"] = "admin";
+                        //Session["status"] = reader.GetValue(10).ToString();
                     }
+                    Response.Redirect("homepage.aspx");
                 }
                 else
                 {

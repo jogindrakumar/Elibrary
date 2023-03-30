@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -26,6 +27,38 @@ namespace Elib
                     bookinvent.Visible = false; // Book Inventery login link button
                     bookissue.Visible = false; // book Issue link button
                     membermg.Visible = false; // Member managment link button
+
+                }
+                else if (Session["role"].Equals("user"))
+                {
+                    userlogin.Visible = false; // user login link button
+                    signup.Visible = false; // Sign UP link button
+                    logout.Visible = true; // logout link button
+                    hellouser.Visible = true; // hello user link button
+                    hellouser.Text = "Hello" + Session["username"].ToString(); // hello user link button
+
+                    adminlogin.Visible = true; // admin login link button
+                    authormg.Visible = false; // author management link button
+                    publishermg.Visible = false; // publisher managementlink button
+                    bookinvent.Visible = false; // Book Inventery login link button
+                    bookissue.Visible = false; // book Issue link button
+                    membermg.Visible = false; // Member managment link button
+
+                }
+                else if (Session["role"].Equals("admin"))
+                {
+                    userlogin.Visible = false; // user login link button
+                    signup.Visible = false; // Sign UP link button
+                    logout.Visible = true; // logout link button
+                    hellouser.Visible = true; // hello user link button
+                    hellouser.Text = "Hello Admin " +" " + Session["fullname"].ToString(); // hello user link button
+
+                    adminlogin.Visible = false; // admin login link button
+                    authormg.Visible = true; // author management link button
+                    publishermg.Visible = true; // publisher managementlink button
+                    bookinvent.Visible = true; // Book Inventery login link button
+                    bookissue.Visible = true; // book Issue link button
+                    membermg.Visible = true; // Member managment link button
 
                 }
 
@@ -84,7 +117,22 @@ namespace Elib
 
         protected void LinkButton9_Click(object sender, EventArgs e)
         {
+            Session["username"] = "";
+            Session["fullname"] = "";
+            Session["role"] = "";
+            Session["status"] = "";
             //Response.Redirect("Admin_member_management.aspx");
+
+            userlogin.Visible = true; // user login link button
+            signup.Visible = true; // Sign UP link button
+            logout.Visible = false; // logout link button
+            hellouser.Visible = false; // hello user link button
+            adminlogin.Visible = true; // admin login link button
+            authormg.Visible = false; // author management link button
+            publishermg.Visible = false; // publisher managementlink button
+            bookinvent.Visible = false; // Book Inventery login link button
+            bookissue.Visible = false; // book Issue link button
+            membermg.Visible = false; // Member managment link button
         }
     }
 }
