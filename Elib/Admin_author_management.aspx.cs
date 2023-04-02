@@ -51,6 +51,16 @@ namespace Elib
         //Delete function
         protected void Button4_Click(object sender, EventArgs e)
         {
+            if (checkMemberExists())
+            {
+                deleteAuthor();
+
+            }
+            else
+            {
+                Response.Write("<script>alert('Author ID Does not  exits check another one !! ')</script>");
+
+            }
 
         }
 
@@ -58,6 +68,32 @@ namespace Elib
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        //delete author function 
+
+        void deleteAuthor()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("DELETE from author_master_tbl where author_id='" + author_id.Text.Trim() + "'", con);
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author Deleted Successfully!!')</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+
+            }
         }
 
         // update author function 
