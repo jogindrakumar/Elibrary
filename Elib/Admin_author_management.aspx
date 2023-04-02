@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_author_management.aspx.cs" Inherits="Elib.Admin_author_management" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$(document).ready(function () {
+            //$('.table').DataTable();
+            // });
+
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            //$('.table1').DataTable();
+        });
+    </script>
     <style>
         .page-img{
             width:100px;
