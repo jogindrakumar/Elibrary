@@ -88,6 +88,7 @@ namespace Elib
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Author Deleted Successfully!!')</script>");
+                clearForm();
             }
             catch (Exception ex)
             {
@@ -116,6 +117,7 @@ namespace Elib
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Author Updated  Successfully!!')</script>");
+                clearForm();
             }
             catch (Exception ex)
             {
@@ -146,6 +148,7 @@ namespace Elib
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Author added Successfully!!')</script>");
+                clearForm();
             }
             catch (Exception ex)
             {
@@ -154,7 +157,7 @@ namespace Elib
             }
         }
 
-        //user defined function 
+        //user check user defined function 
         bool checkMemberExists()
         {
             try
@@ -187,6 +190,12 @@ namespace Elib
 
             }
 
+        }
+
+        void clearForm()
+        {
+            author_id.Text = "";
+            author_name.Text = "";
         }
     }
 }
