@@ -35,7 +35,16 @@ namespace Elib
         //update function
         protected void Button3_Click(object sender, EventArgs e)
         {
+            if (checkMemberExists())
+            {
+                updateAuthor();
+               
+            }
+            else
+            {
+                Response.Write("<script>alert('Author ID Does not  exits check another one !! ')</script>");
 
+            }
         }
 
 
@@ -51,8 +60,36 @@ namespace Elib
 
         }
 
+        // update author function 
 
-        //user defined function 
+        void updateAuthor()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("update author_master_tbl set author_name=@author_name where author_id='"+author_id.Text.Trim() +"'", con);
+              
+                cmd.Parameters.AddWithValue("@author_name", author_name.Text.Trim());
+
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author Updated  Successfully!!')</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+
+            }
+        }
+
+
+        //add athor function 
 
         void addNewAuthor()
         {
