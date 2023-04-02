@@ -42,8 +42,8 @@
                                 <label>Author ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                                        <asp:Button class="btn btn-primary" ID="author_id" runat="server" Text="Go" OnClick="Button1_Click" />
+                                        <asp:TextBox CssClass="form-control" ID="author_id" runat="server" placeholder="ID"></asp:TextBox>
+                                        <asp:Button class="btn btn-primary" ID="go" runat="server" Text="Go" OnClick="Button1_Click" />
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="col-md-8">
                                 <label>Author Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Author Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="author_name" runat="server" placeholder="Author Name"></asp:TextBox>
 
                                 </div>
                             </div>

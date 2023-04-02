@@ -15,7 +15,7 @@ namespace Elib
 
             try
             {
-                if (Session["role"].Equals(""))
+                if (Session["role"] == null)
                 {
                     userlogin.Visible = true; // user login link button
                     signup.Visible = true; // Sign UP link button
@@ -133,6 +133,7 @@ namespace Elib
             bookinvent.Visible = false; // Book Inventery login link button
             bookissue.Visible = false; // book Issue link button
             membermg.Visible = false; // Member managment link button
+            Response.Redirect("homepage.aspx");
         }
     }
 }

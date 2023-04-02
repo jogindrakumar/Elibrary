@@ -27,6 +27,7 @@ namespace Elib
             }
             else
             {
+                addNewAuthor();
 
             }
 
@@ -48,6 +49,36 @@ namespace Elib
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        //user defined function 
+
+        void addNewAuthor()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("insert into author_master_tbl(author_id,author_name)" +
+                    " values(@author_id,@author_name)", con);
+                cmd.Parameters.AddWithValue("@author_id", author_id.Text.Trim());
+                cmd.Parameters.AddWithValue("@author_name", author_name.Text.Trim());
+          
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                Response.Write("<script>alert('Author added Successfully!!')</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+
+            }
         }
 
         //user defined function 
