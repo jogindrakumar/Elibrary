@@ -11,7 +11,6 @@
 
 <%--    data tables--%>
     <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-      <script src="datatables/js/jquery.dataTables.min.js"></script>
  <%--   font awesome --%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
     <link href="Css/Style.css" rel="stylesheet" />
@@ -97,8 +96,9 @@
         </footer>
     </form>
   <%--  bootstrap js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+    
     <script src="fontawesome/js/all.js"></script>
 </body>
 </html>

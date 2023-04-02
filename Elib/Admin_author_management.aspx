@@ -1,16 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_author_management.aspx.cs" Inherits="Elib.Admin_author_management" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script type="text/javascript">
-        $(document).ready(function () {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+  
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function () {
 
-            //$(document).ready(function () {
-            //$('.table').DataTable();
-            // });
+              //$(document).ready(function () {
+              //$('.table').DataTable();
+              // });
 
-            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-            //$('.table1').DataTable();
-        });
-    </script>
+              $("#GridView1").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+              //$('.table1').DataTable();
+          });
+      </script>
     <style>
         .page-img{
             width:100px;

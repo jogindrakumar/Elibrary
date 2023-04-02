@@ -68,8 +68,50 @@ namespace Elib
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+            
+                getuserbyId();
+
+           
+          
         }
 
+
+        // get author by id
+
+        void getuserbyId()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("select * from author_master_tbl where author_id='" + author_id.Text.Trim() + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >= 1)
+                {
+                    author_name.Text = dt.Rows[0][1].ToString();
+                }
+                else
+                {
+                    Response.Write("<script>alert('Invalid Author ID')</script>");
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+              
+
+            }
+        }
 
         //delete author function 
 
