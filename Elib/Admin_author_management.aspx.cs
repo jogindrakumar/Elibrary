@@ -15,7 +15,7 @@ namespace Elib
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridView1.DataBind();
         }
 
         // add button
@@ -89,6 +89,7 @@ namespace Elib
                 con.Close();
                 Response.Write("<script>alert('Author Deleted Successfully!!')</script>");
                 clearForm();
+                GridView1.DataBind();
             }
             catch (Exception ex)
             {
@@ -118,6 +119,7 @@ namespace Elib
                 con.Close();
                 Response.Write("<script>alert('Author Updated  Successfully!!')</script>");
                 clearForm();
+                GridView1.DataBind();
             }
             catch (Exception ex)
             {
@@ -149,6 +151,7 @@ namespace Elib
                 con.Close();
                 Response.Write("<script>alert('Author added Successfully!!')</script>");
                 clearForm();
+                GridView1.DataBind();
             }
             catch (Exception ex)
             {
