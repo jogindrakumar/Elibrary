@@ -81,10 +81,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibDBConnectionString2 %>" SelectCommand="SELECT * FROM [publisher_master_tbl]" ProviderName="<%$ ConnectionStrings:elibDBConnectionString2.ProviderName %>"></asp:SqlDataSource>
-                            <div class="col">
-                                <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
-                            </div>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibDBConnectionString %>" SelectCommand="SELECT * FROM [publisher_master_tbl]"></asp:SqlDataSource>
+                            <asp:GridView ID="GridView1" class="table table-striped table-bordered" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                                <Columns>
+                                    <asp:BoundField DataField="publisher_id" HeaderText="publisher_id" SortExpression="publisher_id" />
+                                    <asp:BoundField DataField="publisher_name" HeaderText="publisher_name" SortExpression="publisher_name" />
+                                </Columns>
+                            </asp:GridView>
                         </div>
                     </div>
                 </div>
