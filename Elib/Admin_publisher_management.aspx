@@ -37,7 +37,7 @@
                                 <label>Publisher ID</label>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
+                                        <asp:TextBox CssClass="form-control" ID="publisher_id" runat="server" placeholder="ID"></asp:TextBox>
                                         <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" OnClick="Button1_Click" />
                                     </div>
                                 </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-8">
                                 <label>Publisher Name</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Publisher Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="publisher_name" runat="server" placeholder="Publisher Name"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -81,6 +81,7 @@
                             </div>
                         </div>
                         <div class="row">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibDBConnectionString2 %>" SelectCommand="SELECT * FROM [publisher_master_tbl]" ProviderName="<%$ ConnectionStrings:elibDBConnectionString2.ProviderName %>"></asp:SqlDataSource>
                             <div class="col">
                                 <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
                             </div>

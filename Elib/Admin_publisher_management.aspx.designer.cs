@@ -15,13 +15,13 @@ namespace Elib
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// publisher_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox publisher_id;
 
         /// <summary>
         /// Button1 control.
@@ -33,13 +33,13 @@ namespace Elib
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// TextBox2 control.
+        /// publisher_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox publisher_name;
 
         /// <summary>
         /// Button2 control.
@@ -67,6 +67,15 @@ namespace Elib
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button4;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
         /// GridView1 control.
