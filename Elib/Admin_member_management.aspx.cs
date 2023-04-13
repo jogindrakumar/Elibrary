@@ -13,5 +13,10 @@ namespace Elib
         {
 
         }
+
+        protected void Go_btn(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert('go')</script>");
+        }
     }
 }
