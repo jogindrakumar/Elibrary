@@ -39,7 +39,7 @@
                                
                               <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
                        
-                               <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server" OnClick="Go_btn"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                               <asp:LinkButton class="btn btn-primary" ID="Go_button" runat="server" OnClick="Go_btn"><i class="fas fa-check-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
@@ -54,9 +54,9 @@
                         <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control mr-1" ID="TextBox7" runat="server" placeholder="Account Status" ReadOnly="True"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-success mr-1" ID="LinkButton1" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
-                              <asp:LinkButton class="btn btn-warning mr-1" ID="LinkButton2" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
-                              <asp:LinkButton class="btn btn-danger mr-1" ID="LinkButton3" runat="server"><i class="fas fa-times-circle"></i></asp:LinkButton>
+                              <asp:LinkButton class="btn btn-success mr-1" ID="active_status_btn" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              <asp:LinkButton class="btn btn-warning mr-1" ID="pending_status_btn" runat="server"><i class="far fa-pause-circle"></i></asp:LinkButton>
+                              <asp:LinkButton class="btn btn-danger mr-1" ID="deactive_status_btn" runat="server"><i class="fas fa-times-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
@@ -135,8 +135,25 @@
                      </div>
                   </div>
                   <div class="row">
+                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibDBConnectionString %>" SelectCommand="SELECT * FROM [member_master_tbl]"></asp:SqlDataSource>
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="member_id" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="member_id" HeaderText="Member ID" ReadOnly="True" SortExpression="member_id" />
+                                <asp:BoundField DataField="full_name" HeaderText="Name" SortExpression="full_name" />
+                               <%-- <asp:BoundField DataField="dob" HeaderText="dob" SortExpression="dob" />--%>
+                                  <asp:BoundField DataField="account_status" HeaderText="Status" SortExpression="account_status" />
+                                <asp:BoundField DataField="contact_no" HeaderText="Contact" SortExpression="contact_no" />
+                                <asp:BoundField DataField="email" HeaderText="Email" SortExpression="email" />
+                                <asp:BoundField DataField="state" HeaderText="State" SortExpression="state" />
+                                <asp:BoundField DataField="city" HeaderText="City" SortExpression="city" />
+                               <%-- <asp:BoundField DataField="pincode" HeaderText="Pincode" SortExpression="pincode" />
+                                <asp:BoundField DataField="full_address" HeaderText="Address" SortExpression="full_address" />--%>
+                                
+                      <%--          <asp:BoundField DataField="password" HeaderText="Password" SortExpression="password" />--%>
+                              
+                            </Columns>
+                         </asp:GridView>
                      </div>
                   </div>
                </div>

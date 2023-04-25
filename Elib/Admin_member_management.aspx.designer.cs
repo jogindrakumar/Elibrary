@@ -24,13 +24,13 @@ namespace Elib
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// Go_button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton Go_button;
 
         /// <summary>
         /// TextBox2 control.
@@ -51,31 +51,31 @@ namespace Elib
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// active_status_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton active_status_btn;
 
         /// <summary>
-        /// LinkButton2 control.
+        /// pending_status_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton pending_status_btn;
 
         /// <summary>
-        /// LinkButton3 control.
+        /// deactive_status_btn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton deactive_status_btn;
 
         /// <summary>
         /// TextBox8 control.
@@ -148,6 +148,15 @@ namespace Elib
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
         /// GridView1 control.
