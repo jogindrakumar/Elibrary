@@ -23,21 +23,22 @@ namespace Elib
         {
             Response.Write("<script>alert('go')</script>");
         }
-        protected void Go_button(object sender, EventArgs e)
+       
+     
+
+        protected void active_status_btn_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('go')</script>");
+
         }
-        protected void active_status_btn(object sender, EventArgs e)
+
+        protected void pending_status_btn_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('go')</script>");
+
         }
-        protected void pending_status_btn(object sender, EventArgs e)
+
+        protected void deactive_status_btn_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('go')</script>");
-        }
-        protected void deactive_status_btn(object sender, EventArgs e)
-        {
-            Response.Write("<script>alert('go')</script>");
+
         }
     }
 }
