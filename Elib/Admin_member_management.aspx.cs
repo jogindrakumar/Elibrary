@@ -21,7 +21,7 @@ namespace Elib
 
         protected void Go_btn(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('go')</script>");
+            getMemberById();
         }
        
      
@@ -39,6 +39,53 @@ namespace Elib
         protected void deactive_status_btn_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        //user Defined Function 
+
+        void getMemberById()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(strcon);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+
+                }
+                SqlCommand cmd = new SqlCommand("select * from member_master_tbl where member_id='" + member_id.Text.Trim()  + "'", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+
+                    while (reader.Read())
+                    {
+
+                        TextBox2.Text = reader.GetValue(0).ToString();
+                        TextBox7.Text = reader.GetValue(10).ToString();
+                        TextBox8.Text = reader.GetValue(1).ToString();
+                        TextBox3.Text = reader.GetValue(2).ToString();
+                        TextBox4.Text = reader.GetValue(3).ToString();
+                        TextBox9.Text = reader.GetValue(4).ToString();
+                        TextBox10.Text = reader.GetValue(5).ToString();
+                        TextBox11.Text = reader.GetValue(6).ToString();
+                        TextBox6.Text = reader.GetValue(7).ToString();
+                      
+                    }
+                   
+                }
+                else
+                {
+                    Response.Write("<script>alert('Invalid User')</script>");
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+            }
         }
     }
 }

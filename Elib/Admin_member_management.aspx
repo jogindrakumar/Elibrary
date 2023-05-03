@@ -37,7 +37,7 @@
                         <div class="form-group">
                            <div class="input-group">
                                
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
+                              <asp:TextBox CssClass="form-control" ID="member_id" runat="server" placeholder="Member ID"></asp:TextBox>
                        
                                <asp:LinkButton class="btn btn-primary" ID="Go_button" runat="server" OnClick="Go_btn"><i class="fas fa-check-circle"></i></asp:LinkButton>
                            </div>
